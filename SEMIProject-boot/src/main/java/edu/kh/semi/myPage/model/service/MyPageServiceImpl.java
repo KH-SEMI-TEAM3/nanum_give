@@ -1,4 +1,4 @@
-package edu.kh.semi.mypage.model.service;
+package edu.kh.semi.myPage.model.service;
 
 import java.util.Map;
 

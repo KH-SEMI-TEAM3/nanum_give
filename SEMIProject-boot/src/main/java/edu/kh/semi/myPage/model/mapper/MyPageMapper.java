@@ -1,4 +1,4 @@
-package edu.kh.semi.mypage.model.mapper;
+package edu.kh.semi.myPage.model.mapper;
 
 public class MyPageMapper {
 
