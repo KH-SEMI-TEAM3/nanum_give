@@ -1,4 +1,4 @@
-package edu.kh.semi.mypage.controller;
+package edu.kh.semi.myPage.controller;
 import java.util.List;
 import java.util.Map;
 
@@ -17,7 +17,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import edu.kh.semi.member.model.dto.Member;
-import edu.kh.semi.mypage.model.service.MyPageService;
+import edu.kh.semi.myPage.model.service.MyPageService;
 import jakarta.mail.Multipart;
 import lombok.extern.slf4j.Slf4j;
 // 내가 작성한 글 목록 추가

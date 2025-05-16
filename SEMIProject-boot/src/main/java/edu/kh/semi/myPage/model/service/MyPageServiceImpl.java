@@ -1,11 +1,14 @@
-package edu.kh.semi.mypage.model.service;
+package edu.kh.semi.myPage.model.service;
 
 import java.util.Map;
 
+import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import edu.kh.semi.member.model.dto.Member;
 
+
+@Service
 public class MyPageServiceImpl implements MyPageService {
 
 	@Override

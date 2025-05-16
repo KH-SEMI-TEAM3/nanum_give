@@ -3,8 +3,13 @@ package edu.kh.semi.board.model.dto;
 import java.util.Date;
 import java.util.List;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
+
+@NoArgsConstructor
+@AllArgsConstructor
 @Data
 public class Board {
     private Long boardNo;        // BOARD_NO
@@ -32,5 +37,5 @@ public class Board {
 	private String thumbnail;
 	
 	//특정 게시글 작성된 목록 리스트
-	private List<Comment> commentList;
+	//private List<Comment> commentList;
 }
