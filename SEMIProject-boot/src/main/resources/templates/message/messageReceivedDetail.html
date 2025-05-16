@@ -25,7 +25,6 @@
         <span th:text="'보낸 날짜 | ' + ${#dates.format(message.messageWriteDate, 'yyyy-MM-dd | HH:mm:ss')}">2025-05-21 | 13:30:00</span>
       </div>
 
-      
       <div class="message-detail-btns">
         <a th:href="@{|/message/write?to=${message.senderId}|}" class="btn">답장하기</a>
         <a th:href="@{|/message/delete/${message.messageNo}|}" class="btn">삭제</a>
