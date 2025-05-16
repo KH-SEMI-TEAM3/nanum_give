@@ -5,7 +5,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -22,5 +21,4 @@ public class Member {
 	private String memberDelFl;
 	private int authority;
 	private String memberImg;
-
 }
