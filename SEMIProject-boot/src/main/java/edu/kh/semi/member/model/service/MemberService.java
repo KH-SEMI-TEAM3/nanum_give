@@ -5,5 +5,5 @@ import edu.kh.semi.member.model.dto.Member;
 public interface MemberService {
 
 	Member selectMemberByNo(int memberNo);
-
+  
 }
