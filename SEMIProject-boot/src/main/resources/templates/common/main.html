@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title th:text="#{app.name}">messages.properties app.name</title>
+
+	<!-- templates/common/common.html 조각으로 추가 -->
+	<th:block th:replace="~{common/common}"></th:block>
+</head>
+
+<body>
+	<!-- common/header 추가-->
+	<th:block th:replace="~{common/header}"></th:block>
+
+	<main>
+		<h1>test</h1>
+
+	</main>
+
+	<!-- common/footer 추가-->
+	<th:block th:replace="~{common/footer}"></th:block>
+
+	<!-- script 추가-->
+	<script src="/js/main.js"></script>
+
+</body>
+
+</html>
