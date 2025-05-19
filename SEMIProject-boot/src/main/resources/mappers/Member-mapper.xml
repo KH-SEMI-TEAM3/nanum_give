@@ -3,7 +3,7 @@
 <mapper namespace="edu.kh.semi.member.model.mapper.MemberMapper">
 
 	<!-- 로그인 -->
-	<select id="login" resultType="Member">
+	<select id="login">
 		SELECT MEMBER_NO, MEMBER_ID, MEMBER_PW,
 		MEMBER_NICKNAME, MEMBER_EMAIL, MEMBER_TEL, MEMBER_ADDRESS,
 		MEMBER_IMG, AUTHORITY,
@@ -53,14 +53,11 @@
 			#{memberTel},
 			#{memberAddress}
 		)
-	</insert>
-	
-	<select id="selectMemberByNo"> 
-		SELECT MEMBER_NO, MEMBER_EMAIL, MEMBER_PW, MEMBER_NICKNAME, MEMBER_TEL, MEMBER_ADDRESS, PROFILE_IMG, 
-				TO_CHAR(ENROLL_DATE, 'YYYY-MM-DD') AS ENROLL_DATE, MEMBER_DEL_FL, AUTHORITY 
-		FROM MEMBER 
-		WHERE MEMBER_NO = #{memberNo} 
-	</select>
+</insert>
 
+<select id="selectMemberByNo"> 
+SELECT MEMBER_NO, MEMBER_EMAIL, MEMBER_PW, MEMBER_NICKNAME, MEMBER_TEL, MEMBER_ADDRESS, PROFILE_IMG, TO_CHAR(ENROLL_DATE, 'YYYY-MM-DD') 
+AS ENROLL_DATE, MEMBER_DEL_FL, AUTHORITY FROM MEMBER WHERE MEMBER_NO = #{memberNo} 
+</select>
 
 </mapper>

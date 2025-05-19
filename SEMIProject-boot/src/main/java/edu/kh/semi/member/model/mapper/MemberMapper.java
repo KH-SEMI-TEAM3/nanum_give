@@ -4,6 +4,7 @@ import org.apache.ibatis.annotations.Mapper;
 
 import edu.kh.semi.member.model.dto.Member;
 
+
 @Mapper
 public interface MemberMapper {
 	
@@ -36,5 +37,11 @@ public interface MemberMapper {
 	 * @return
 	 */
 	int signup(Member inputMember);
+
+	/**  멤버의 전체 정보를 memberNo을 주면 반환해주는 로직
+	 * @param memberNo
+	 * @return
+	 */
+	Member selectMemberByNo(int memberNo);
 
 }

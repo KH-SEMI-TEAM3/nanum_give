@@ -7,6 +7,8 @@ import org.springframework.web.multipart.MultipartFile;
 
 import edu.kh.semi.member.model.dto.Member;
 
+
+
 public interface MyPageService {
 
 	/** 회원 정보 업데이트 서비스

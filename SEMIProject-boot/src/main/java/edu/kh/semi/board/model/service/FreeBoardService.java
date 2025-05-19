@@ -5,6 +5,8 @@ import java.util.List;
 
 import edu.kh.semi.board.model.dto.Board;
 
+
+
 public interface FreeBoardService {
     List<Board> getFreeBoardList();
     Board getFreeBoard(Long boardNo);

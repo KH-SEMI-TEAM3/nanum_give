@@ -96,4 +96,16 @@ public class MemberServiceImpl implements MemberService {
 		// 회원 가입 mapper 메서드 호출
 		return mapper.signup(inputMember);
 	}
+
+	/**
+	 * 멤버의 전체 정보를 memberNo을 주면 반환해주는 로직
+	 */
+	@Override
+	public Member selectMemberByNo(int memberNo) {
+		// TODO Auto-generated method stub
+		return mapper.selectMemberByNo(memberNo);
+
+	}
+
+
 }
