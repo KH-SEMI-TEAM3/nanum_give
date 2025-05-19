@@ -28,6 +28,48 @@ header {
 .search-bar {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
+  width: 100%;
+  max-width: 600px;
+}
+
+form#search {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Select */
+.custom-select {
+    position: relative;
+    margin-right: 10px;
+    width: 150px;
+}
+
+.custom-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    padding: 10px 35px 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+/*화살표 이동*/
+.select-arrow {
+    position: absolute;
+    inset-inline-end: 15px; /* right의 반응형 대체 */
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #888;
+    font-size: 20px;
+=======
   width: 50%;
   max-width: 600px;
 }
@@ -81,6 +123,7 @@ header {
 
 .dropdown:hover .dropdown-menu {
   display: block;
+>>>>>>> d64394c4795a630299876b2de8b605702f4358c5
 }
 
 /* Search Input */
