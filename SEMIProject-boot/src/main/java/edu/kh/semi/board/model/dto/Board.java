@@ -5,7 +5,7 @@ import java.util.List;
 
 import lombok.Data;
 
-@Data
+@Data 
 public class Board {
     private Long boardNo;        // BOARD_NO
     private String boardTitle;   // BOARD_TITLE
@@ -32,5 +32,10 @@ public class Board {
 	private String thumbnail;
 	
 	//특정 게시글 작성된 목록 리스트
-	private List<Comment> commentList;
+	//private List<Comment> commentList;
+	
+	// 공지 게시판 전용 
+	private int authority;
+	
+	
 }
