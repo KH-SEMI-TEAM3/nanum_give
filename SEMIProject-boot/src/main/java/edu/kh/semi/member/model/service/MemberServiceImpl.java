@@ -104,6 +104,7 @@ public class MemberServiceImpl implements MemberService {
 	public Member selectMemberByNo(int memberNo) {
 		// TODO Auto-generated method stub
 		return mapper.selectMemberByNo(memberNo);
+
 	}
 
 

@@ -4,6 +4,7 @@ import org.apache.ibatis.annotations.Mapper;
 
 import edu.kh.semi.member.model.dto.Member;
 
+
 @Mapper
 public interface MemberMapper {
 	

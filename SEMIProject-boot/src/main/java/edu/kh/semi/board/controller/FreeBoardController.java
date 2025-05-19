@@ -1,4 +1,4 @@
-package edu.kh.semi.board.freeboardController;
+package edu.kh.semi.board.controller;
 
 import java.util.List;
 

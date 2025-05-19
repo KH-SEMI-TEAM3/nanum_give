@@ -39,9 +39,9 @@ public class MessageController {
      */
     @GetMapping("/inbox")
     public String viewInbox(HttpSession session, Model model) {
-        log.info("viewInbox 진입");
+        log.info("로그인된 상황에서 진입");
         Member loginMember = (Member) session.getAttribute("loginMember");
-        log.info("viewInbox - loginMember: {}", loginMember);
+        log.info(" loginMember: {}", loginMember);
 
         if (loginMember == null) {
             log.warn("로그인 필요");
