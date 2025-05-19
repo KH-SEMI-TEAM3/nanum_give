@@ -1,9 +1,9 @@
 package edu.kh.semi.myPage.controller;
 
+
 import java.util.List;
 import java.util.Map;
 
-import org.eclipse.angus.mail.handlers.multipart_mixed;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,16 +21,8 @@ import edu.kh.semi.member.model.dto.Member;
 import edu.kh.semi.myPage.model.service.MyPageService;
 import jakarta.mail.Multipart;
 import lombok.extern.slf4j.Slf4j;
-// 내가 작성한 글 목록 추가
-/*
- * @SessionAttributes 의 역할
- *  - Model에 추가된 속성 중 key값이 일치하는 속성을 session scope로 변경
- *  - SessionStatus 이용 시 session에 등록된 완료할 대상을 찾는 용도
- * 
- * @SessionAttribute 의 역할 (매개변수에 쓰는 것)
- * - Session에 존재하는 값을 Key로 얻어오는 역할 
- * 
- * */
+
+
 @SessionAttributes({"loginMember"})
 @Controller
 @RequestMapping("myPage")

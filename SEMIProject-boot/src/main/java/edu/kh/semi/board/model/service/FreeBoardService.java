@@ -2,6 +2,7 @@ package edu.kh.semi.board.model.service;
 
 import java.util.List;
 
+
 import edu.kh.semi.board.model.dto.Board;
 
 public interface FreeBoardService {
