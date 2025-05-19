@@ -3,9 +3,14 @@ package edu.kh.semi.board.model.dto;
 import java.util.Date;
 import java.util.List;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Data 
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class Board {
     private Long boardNo;        // BOARD_NO
     private String boardTitle;   // BOARD_TITLE
