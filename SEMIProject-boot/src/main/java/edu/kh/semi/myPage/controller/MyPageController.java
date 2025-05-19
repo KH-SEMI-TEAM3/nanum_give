@@ -1,4 +1,7 @@
 package edu.kh.semi.myPage.controller;
+
+
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +19,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import edu.kh.semi.member.model.dto.Member;
 import edu.kh.semi.myPage.model.service.MyPageService;
+import jakarta.mail.Multipart;
 import lombok.extern.slf4j.Slf4j;
 
 
