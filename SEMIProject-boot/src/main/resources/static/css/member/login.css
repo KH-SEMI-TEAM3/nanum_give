@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+main {
   background-image: url("/mnt/data/로그인 배경.png");
   background-size: cover;
   background-position: center;
