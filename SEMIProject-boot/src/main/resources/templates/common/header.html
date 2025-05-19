@@ -1,4 +1,5 @@
 <header>
+<<<<<<< HEAD
 	<section>
 		    <div class="header-container">
 		        <!-- Logo -->
@@ -59,3 +60,64 @@
 		    </nav>
 	</section>
 </header>
+=======
+  <div class="header-container">
+    <!-- Logo -->
+    <div class="logo">
+      <a th:href="@{/}">NanumGive</a>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <div class="dropdown">
+        <button class="dropdown-toggle">
+          나눔게시판
+          <span class="material-symbols-outlined">keyboard_arrow_down</span>
+        </button>
+        <div class="dropdown-menu">
+          <a href="#">나눔게시판</a>
+          <a href="#">자유게시판</a>
+          <a href="#">공지게시판</a>
+          <a href="#">문의게시판</a>
+        </div>
+      </div>
+      <div class="search-input">
+        <input type="text" placeholder="검색어를 입력해주세요.">
+        <button class="search-button">
+          <span class="material-symbols-outlined">search</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="user-menu">
+      <!-- 비로그인 사용자 -->
+      <th:block th:if="${session.loginMember == null}">
+        <a th:href="@{/member/loginPage}">
+          <span class="material-symbols-outlined">login</span>
+        </a>
+      </th:block>
+
+      <!-- 로그인 사용자 -->
+      <th:block th:if="${session.loginMember != null}">
+        <a th:href="@{/messages}" class="message-button">
+          <img th:src="@{/images/message-icon.svg}" alt="Messages">
+        </a>
+        <a th:href="@{/profile}" class="profile-button">
+          <img th:src="@{/images/profile-icon.svg}" alt="Profile">
+        </a>
+      </th:block>
+    </div>
+  </div>
+
+  <!-- Navigation tabs -->
+  <nav class="main-nav">
+    <ul>
+      <li><a th:href="@{/nanum}" class="nav-item">나눔게시판</a></li>
+      <li><a th:href="@{/free}" class="nav-item">자유게시판</a></li>
+      <li><a th:href="@{/notice}" class="nav-item">공지게시판</a></li>
+      <li><a th:href="@{/help}" class="nav-item">문의게시판</a></li>
+    </ul>
+  </nav>
+</header>
+>>>>>>> d64394c4795a630299876b2de8b605702f4358c5
