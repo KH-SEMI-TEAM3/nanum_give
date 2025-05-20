@@ -38,4 +38,7 @@ public class Board {
 	
 	//특정 게시글 작성된 목록 리스트
 	//private List<Comment> commentList;
+	
+	private int authority;
+
 }

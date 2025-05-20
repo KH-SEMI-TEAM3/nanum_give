@@ -33,16 +33,19 @@
 		        <div class="user-menu">
 		            <!-- Show this for non-logged in users -->
 					<th:block th:if="${session.loginMember == null}">
-						<a th:href="@{/login}"><span class="material-symbols-outlined">login</span></a>
+						<a th:href="@{/member/loginPage}"><span class="material-symbols-outlined">login</span></a>
 					</th:block>
 		            
 		            <!-- Show this for logged in users -->
 					<th:block th:if="${session.loginMember != null}">
+							<a>
+								<span class="material-symbols-outlined">logout</span>
+							</a>
 			                <a th:href="@{/messages}" class="message-button">
-			                    <img th:src="@{/images/message-icon.svg}" alt="Messages">
+			                    <
 			                </a>
 			                <a th:href="@{/profile}" class="profile-button">
-			                    <img th:src="@{/images/profile-icon.svg}" alt="Profile">
+			                    <
 			                </a>
 					</th:block>
 		        </div>
